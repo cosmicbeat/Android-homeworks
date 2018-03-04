@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/small_pad"
+    >
+
+    <TextView
+        android:id="@+id/txt_ben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ben"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/small_pad"
+        android:paddingRight="@dimen/small_pad"
+        />
+
+    <TextView
+        android:id="@+id/txt_kagure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kagure"
+        android:layout_toRightOf="@+id/txt_ben"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/txt_kunal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kunal"
+        android:layout_toLeftOf="@+id/txt_ben"
+        android:layout_alignParentTop="true" />
+
+
+    <TextView
+        android:id="@+id/txt_lyla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Lyla"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:paddingRight="@dimen/small_pad"/>
+
+    <TextView
+        android:id="@+id/txt_Natalie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Natalie"
+        android:layout_above="@+id/txt_lyla"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/txt_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/me"
+        android:layout_toRightOf="@+id/txt_lyla"
+        android:layout_alignParentBottom="true"/>
+
+
+    <TextView
+        android:id="@+id/txt_jennie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Jennie"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txt_omoju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/omoju"
+        android:layout_above="@+id/txt_jennie"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txt_amy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Amy"
+        android:layout_above="@+id/txt_omoju"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
