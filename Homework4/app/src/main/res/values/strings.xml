@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Homework4</string>
+    <string name="action_settings">Settings</string>
+    <string name="francisco_watson">Francisco Watson</string>
+    <string name="some_number">31</string>
+    <string name="sendGift">send a gift</string>
+    <string name="feed_txt">feed</string>
+    <string name="scan">scanner</string>
+    <string name="gift">gifts</string>
+    <string name="profile">profile</string>
+    <string name="today_10_52_pm">time</string>
+</resources>

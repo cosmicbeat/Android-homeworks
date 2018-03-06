@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/rll_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/feed_txt"
+                android:textAllCaps="true"
+                android:textColor="@color/backgroundLight"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/medium_padding"
+                android:background="@color/colorPrimary"
+                android:src="@mipmap/search" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_feed"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="stories"
+                    android:textAllCaps="true"
+                    android:textColor="@color/backgroundLight"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="campaigns"
+                    android:textAllCaps="true"
+                    android:textColor="@color/backgroundLight"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </Toolbar>
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/backgroundLight">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/backgroundLight"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_padding" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/avatar_1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/backgroundLight"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/medium_padding"
+                        android:text="@string/francisco_watson"
+                        android:textAllCaps="true"
+                        android:textColor="@color/primaryFont"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/medium_padding"
+                        android:text="@string/today_10_52_pm"
+                        android:textAllCaps="true" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_story"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/image_story" />
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/title"
+                android:layout_marginBottom="@dimen/medium_padding"
+                android:paddingLeft="@dimen/effect_leftPadding"
+                android:src="@mipmap/ornaments_1" />
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/image_story"
+                android:layout_marginRight="@dimen/medium_padding"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:src="@mipmap/ornaments_2" />
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/image_story"
+                android:padding="@dimen/medium_padding"
+                android:text="Lorem ipsum dolor sit amet"
+                android:textColor="@color/postFont"
+                android:textSize="@dimen/textSizePost" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:background="@color/backgroundLight"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/medium_padding"
+
+                >
+
+                <ImageButton
+                    android:id="@+id/img_sock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padSmal"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:background="@color/backgroundLight"
+                    android:src="@mipmap/thank_1" />
+
+
+                <TextView
+                    android:id="@+id/txt_some_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/padSmal"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:layout_toRightOf="@+id/img_sock"
+                    android:background="@color/backgroundLight"
+                    android:paddingLeft="4dp"
+                    android:text="@string/some_number"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/img_bt_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padSmal"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:layout_toRightOf="@+id/txt_some_number"
+                    android:background="@color/backgroundLight"
+                    android:src="@mipmap/share_0" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/medium_padding"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:text="@string/sendGift"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backgroundLight"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/padSmal"
+            android:layout_marginTop="@dimen/padSmal"
+            android:layout_weight="1"
+            android:background="@color/backgroundLight"
+            android:src="@mipmap/feed_1" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/padSmal"
+            android:layout_marginTop="@dimen/padSmal"
+            android:layout_weight="1"
+            android:background="@color/backgroundLight"
+            android:src="@mipmap/scanner_0" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/padSmal"
+            android:layout_marginTop="@dimen/padSmal"
+            android:layout_weight="1"
+            android:background="@color/backgroundLight"
+            android:src="@mipmap/gifts_0" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/padSmal"
+            android:layout_marginTop="@dimen/padSmal"
+            android:layout_weight="1"
+            android:background="@color/backgroundLight"
+            android:src="@mipmap/profile_0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backgroundLight"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padSmal"
+            android:layout_weight="1"
+            android:text="@string/feed_txt"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padSmal"
+            android:layout_weight="1"
+            android:text="@string/scan"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/postFont"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padSmal"
+            android:layout_weight="1"
+            android:text="@string/gift"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/postFont"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padSmal"
+            android:layout_weight="1"
+            android:text="@string/profile"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/postFont"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
+

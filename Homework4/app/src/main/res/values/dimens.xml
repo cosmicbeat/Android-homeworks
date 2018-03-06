@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="textSizePost">18sp</dimen>
+    <dimen name="medium_padding">16dp</dimen>
+    <dimen name="effect_leftPadding">22dp</dimen>
+    <dimen name="padSmal">8dp</dimen>
+</resources>
